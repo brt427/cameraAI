@@ -1,4 +1,4 @@
-# CameraAI: Real Time Computer Vision Analytics
+# CameraAI: Real Time Computer Vision Analytics for Restaurants
 
 A novel, real-time computer vision powered analytics engine that ingests live CCTV footage. Developed by Blake Thomas in August 2025. At this time, I am not making the source code public. 
 
