@@ -8,7 +8,7 @@ This project leverages computer vision to generate actionable insights from exis
 
 **Key Features:**
 - Real-time people detection and tracking
-- Spatial mapping of detected individuals to table zones
+- 3D to 2D Spatial mapping of detected individuals to table zones
 - Live 2D dashboard visualization
 - Frame-by-frame analytics with timestamps
 - Runs entirely on local computer vision models
