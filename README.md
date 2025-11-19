@@ -13,6 +13,14 @@ This project leverages computer vision to generate actionable insights from exis
 - Frame-by-frame analytics with timestamps
 - No LLM dependencies—runs entirely on local computer vision models
 
+## Demo
+
+### Live Dashboard View
+![Table Tracking System Dashboard](IMG_8300.jpg)
+
+### Computer Vision Detection
+![Object Detection View](IMG_8301.jpg)
+
 ## System Architecture
 
 ```mermaid
@@ -109,3 +117,4 @@ These extensions would provide powerful operational insights for restaurant mana
 ---
 
 *Developed during a hackathon by a software engineer intern on the capital team*
+
