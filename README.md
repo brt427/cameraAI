@@ -1,4 +1,4 @@
-# CameraAI
+# CameraAI: Real Time Computer Vision Analytics
 
 A novel, real-time computer vision powered analytics engine that ingests live CCTV footage. Developed by Blake Thomas in August 2025. At this time, I am not making the source code public. 
 
@@ -8,12 +8,12 @@ This project leverages computer vision to generate actionable insights from exis
 
 **Key Features:**
 - Real-time people detection and tracking
-- 3D to 2D Spatial mapping of detected individuals to table zones
+- Spatial mapping of detected individuals to table zones
 - Live 2D dashboard visualization
 - Frame-by-frame analytics with timestamps
-- No LLM dependencies—runs entirely on local computer vision models
+- Runs entirely on local computer vision models
 
-## Demo 
+## Demo
 
 <p align="center">
   <strong>Live Dashboard View</strong><br>
@@ -25,12 +25,10 @@ This project leverages computer vision to generate actionable insights from exis
   <img src="images/imageSegment.png" alt="Object Detection View">
 </p>
 
-
 ## System Architecture
 
 <p align="center">
 
-    
 ```mermaid
 flowchart TD
     subgraph ZoneConfig["Zone Configuration"]
@@ -45,7 +43,7 @@ flowchart TD
     end
     
     subgraph CV["Computer Vision"]
-        E[🤖 OpenCV Detection]
+        E[🤖 YOLOv8 Detection]
         F[👥 Object Recognition]
         
         E --> F
@@ -74,6 +72,7 @@ flowchart TD
     I --> L[(Analytics Data)]
     K --> M[🖥️ Real-time Monitoring]
 ```
+
 </p>
 
 ## How It Works
@@ -84,7 +83,7 @@ Before the system can begin real-time tracking, table zones must be defined thro
 
 ### 2. Computer Vision Processing
 
-The live video feed is processed by an OpenCV model running locally. The model detects people within each frame without requiring any external API calls or LLM services. This approach ensures low latency and maintains data privacy since all processing occurs on-premises.
+The live video feed is processed by a YOLOv8 model running locally. The model detects people within each frame without requiring any external API calls or LLM services. This approach ensures low latency and maintains data privacy since all processing occurs on-premises.
 
 ### 3. Spatial Analysis
 
@@ -101,7 +100,7 @@ Beyond the live display, the system stores frame-by-frame analytics with timesta
 ## Technical Details
 
 - **Video Input:** Live CCTV feed from restaurant
-- **Processing:** Local OpenCV model
+- **Processing:** Local YOLOv8 model
 - **Dependencies:** No LLM or cloud AI services required
 - **Output:** Real-time 2D dashboard + stored analytics data
 
@@ -124,4 +123,3 @@ These extensions would provide powerful operational insights for restaurant mana
 - Track table turnover rates
 
 ---
-
