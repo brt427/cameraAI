@@ -1,6 +1,6 @@
 # CameraAI
 
-A real-time computer vision system that tracks table occupancy in restaurants using CCTV footage, developed during a hackathon by a software engineer intern on the capital team.
+A novel, real-time computer vision powered analytics engine that ingests live CCTV footage. Developed by Blake Thomas in August 2025. At this time, I am not making the source code public. 
 
 ## Overview
 
@@ -8,21 +8,29 @@ This project leverages computer vision to generate actionable insights from exis
 
 **Key Features:**
 - Real-time people detection and tracking
-- Spatial mapping of detected individuals to table zones
+- 3D to 2D Spatial mapping of detected individuals to table zones
 - Live 2D dashboard visualization
 - Frame-by-frame analytics with timestamps
 - No LLM dependencies—runs entirely on local computer vision models
 
-## Demo
+## Demo 
 
-### Live Dashboard View
-![Table Tracking System Dashboard](IMG_8300.jpg)
+<p align="center">
+  <strong>Live Dashboard View</strong><br>
+  <img src="images/liveDashboard.jpg" alt="Table Tracking System Dashboard">
+</p>
 
-### Computer Vision Detection
-![Object Detection View](IMG_8301.jpg)
+<p align="center">
+  <strong>Image Segmentation for Table Tracking</strong><br>
+  <img src="images/imageSegment.png" alt="Object Detection View">
+</p>
+
 
 ## System Architecture
 
+<p align="center">
+
+    
 ```mermaid
 flowchart TD
     subgraph ZoneConfig["Zone Configuration"]
@@ -66,6 +74,7 @@ flowchart TD
     I --> L[(Analytics Data)]
     K --> M[🖥️ Real-time Monitoring]
 ```
+</p>
 
 ## How It Works
 
@@ -115,6 +124,4 @@ These extensions would provide powerful operational insights for restaurant mana
 - Track table turnover rates
 
 ---
-
-*Developed during a hackathon by a software engineer intern on the capital team*
 
