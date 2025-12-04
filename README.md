@@ -104,16 +104,6 @@ Beyond the live display, the system stores frame-by-frame analytics with timesta
 - **Dependencies:** No LLM or cloud AI services required
 - **Output:** Real-time 2D dashboard + stored analytics data
 
-## Future Vision
-
-The system is designed as an extensible engine for collecting visual data and building comprehensive data models. Planned enhancements include:
-
-- **Server Response Time:** Measure elapsed time between customer seating and first server interaction
-- **Server Touch Tracking:** Count the number of server visits per table throughout the dining experience
-- **Automated Zone Configuration:** Replace manual table zone definition with computer vision-based automatic detection
-
-These extensions would provide powerful operational insights for restaurant management, enabling data-driven decisions about staffing, service quality, and customer experience optimization.
-
 ## Use Cases
 
 - Monitor real-time table availability
